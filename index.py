@@ -5,6 +5,8 @@ import cgi
 
 form = cgi.FieldStorage()
 pageId = form["id"].value
+# ?id=HTML과 같이 id값이 나온다. 만약 ID값이 없다면 에러가 나서 페이지에 아무것도 뜨지 않는다. localhost8080/index.py를 입력하면 아무것도 안뜨는 이유.
+
 
 print(
     """<!DOCTYPE html>
